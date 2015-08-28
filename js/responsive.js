@@ -5,10 +5,10 @@ $(document).ready(function(){
 $(window).resize(function(){
 	func();
 });
-
+var hasOccured = false;
 function func() {
-	var step_width = $(".step").width();
-	var step_height = $(".step").height();
+	var step_width = $(".step:first").width();
+	var step_height = $(".step:first").height();
 	var path_width = step_width * 0.2;
 
 	$(".path").css({
@@ -27,29 +27,20 @@ function func() {
 		width: Math.floor(path_width * 0.9298),
 		top: Math.floor(step_height * 0.5)
 	});
+	$("circle").hover(function(){
 
-	if(step_width < 1060){
-		$('rect').remove();
-	}
+	})
+	
 	if (step_width < 600){
-		var hasOccured = false;
+		$("rect").remove();
 		$(".path").css({
 			width: step_width,
 			height: step_width
 		});
 		$(".path-first").css({
-			width: step_width,
+			width: step_width * 0.7,
 			height: step_width
 		});
-		if(!hasOccured){
-			var defs = $(".path-first defs");
-			$(".path-first").remove();
-			$(".path:first").clone().prepend($(".step1"));
-			$(".step1 .path defs").remove();
-			$(".step1 .path").prepend(defs);
-			hasOccured = true;
-		}
-		
 	}
 
 }

@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+  body .map .step, body .map .step1 {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -1%; }
+    body .map .step .path-first .circ, body .map .step1 .path-first .circ {
+      stroke: #97DB22; }
+    body .map .step .path-first .rec, body .map .step1 .path-first .rec {
+      fill: #97DB22; }
+    body .map .step .path .circ, body .map .step1 .path .circ {
+      stroke: #97DB22; }
+    body .map .step .path .rec, body .map .step1 .path .rec {
+      fill: #97DB22; }
+    body .map .step .path, body .map .step .path-first, body .map .step1 .path, body .map .step1 .path-first {
+      float: left; }
+    body .map .step .text-wrapper, body .map .step1 .text-wrapper {
+      padding-top: 15%;
+      margin-right: 10%;
+      margin-left: 10%;
+      width: 60%;
+      margin-bottom: 3.4%;
+      float: left; }
+      body .map .step .text-wrapper .title, body .map .step1 .text-wrapper .title {
+        font-size: 2.2vw; }
+      body .map .step .text-wrapper .subtitle, body .map .step1 .text-wrapper .subtitle {
+        font-size: 1.2vw;
+        font-style: italic; }
+  body .map .step1 .text-wrapper {
+    padding-top: 7%;
+    margin-bottom: 4.3%; }
+
+@media screen and (max-width: 1145px) and (min-width 1061px) {
+  .text-wrapper .title {
+    font-size: 2vw !important; }
+  .text-wrapper .subtitle {
+    font-size: 1vw !important; } }
+@media (max-width: 1060px) and (min-width: 951px) {
+  .text-wrapper .title {
+    font-size: 2.2vw !important; }
+  .text-wrapper .subtitle {
+    font-size: 1.2vw !important; } }
+@media (max-width: 950px) and (min-width: 801px) {
+  .text-wrapper .title {
+    font-size: 2.5vw !important; }
+  .text-wrapper .subtitle {
+    font-size: 1.5vw !important; } }
+@media (max-width: 800px) {
+  .text-wrapper {
+    padding-top: 13% !important; }
+    .text-wrapper .title {
+      font-size: 3vw !important; }
+    .text-wrapper .subtitle {
+      font-size: 2vw !important; }
+
+  .step1 .text-wrapper {
+    padding-top: 3% !important; } }
+@media (max-width: 600px) {
+  .text-wrapper {
+    margin: 0 auto !important;
+    width: 90% !important;
+    float: none !important; }
+    .text-wrapper .title {
+      font-size: 4vw !important; }
+    .text-wrapper .subtitle {
+      font-size: 3vw !important; }
+
+  .path, .path-first {
+    float: none !important;
+    margin: 0 auto !important; } }
+@media (max-width: 500px) {
+  .text-wrapper .title {
+    font-size: 5vw !important; }
+  .text-wrapper .subtitle {
+    font-size: 4vw !important; } }
+@media (max-width: 400px) {
+  .text-wrapper .title {
+    font-size: 6vw !important; }
+  .text-wrapper .subtitle {
+    font-size: 5vw !important; } }
+
+/*# sourceMappingURL=pathing.css.map */

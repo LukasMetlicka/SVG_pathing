@@ -5,6 +5,8 @@ body {
 	padding: 0;
 	width: 100%;
 	.map {
+		margin: 0 auto;
+		width: 100%;
 		.step,.step1 {
 			width: 100%;
 			position: relative;
@@ -32,8 +34,8 @@ body {
 			
 			.text-wrapper {
 				padding-top: 15%;
-				margin-right: 10%;
-				margin-left: 10%;
+				margin-right: 1%;
+				margin-left: 19%;
 				width: 60%;
 				margin-bottom: 1.4%;
 				float: left;
@@ -56,24 +58,30 @@ body {
 	}
 }
 
+//Adds responsiveness
 
 @media screen and (max-width: 1145px) and (min-width 1061px) {
-	.text-wrapper {
-		.title {
-			font-size: 2vw !important;
-		}
-		.subtitle {
-			font-size: 1vw !important;
+	.map{
+		.text-wrapper {
+			.title {
+				font-size: 2vw !important;
+			}
+			.subtitle {
+				font-size: 1vw !important;
+			}
 		}
 	}
+	
 }
 @media  (max-width: 1060px) and (min-width: 951px) {
-	.text-wrapper {
-		.title {
-			font-size: 2.2vw !important;
-		}
-		.subtitle {
-			font-size: 1.2vw !important;
+	.map {
+		.text-wrapper {
+			.title {
+				font-size: 2.2vw !important;
+			}
+			.subtitle {
+				font-size: 1.2vw !important;
+			}
 		}
 	}
 }
@@ -88,58 +96,75 @@ body {
 	}
 }
 @media  (max-width: 800px) {
-	.text-wrapper {
-		padding-top: 13% !important;
-		.title {
-			font-size: 3vw !important;
-		}
-		.subtitle {
-			font-size: 2vw !important;
-		}
-	}
-	.step1 {
+	.map {
 		.text-wrapper {
-			padding-top: 3% !important;
+			padding-top: 13% !important;
+			.title {
+				font-size: 3vw !important;
+			}
+			.subtitle {
+				font-size: 2vw !important;
+			}
+		}
+		.step1 {
+			.text-wrapper {
+				padding-top: 3% !important;
+			}
 		}
 	}
 }
+
+@media  (max-width: 615px) {
+	.map {
+		.path-first {
+			margin-left: 15%;
+		}
+	}
+}
+
 @media (max-width: 600px){
-	.text-wrapper {
-		margin: 0 auto !important;
-		width: 90% !important;
-		float: none !important;
-		.title {
-			font-size: 4vw !important;
+	.map {
+		.text-wrapper {
+			margin: 0 auto !important;
+			width: 90% !important;
+			float: none !important;
+			.title {
+				font-size: 4vw !important;
+			}
+			.subtitle {
+				font-size: 3vw !important;
+			}
 		}
-		.subtitle {
-			font-size: 3vw !important;
+		.path,.path-first {
+			float: none !important;
+			margin: 0 auto !important;
 		}
-	}
-	.path,.path-first {
-		float: none !important;
-		margin: 0 auto !important;
-	}
-	.path-first {
-		margin-left: 13% !important;
+		.path-first {
+			margin-left: 13% !important;
+		}
 	}
 }
 @media  (max-width: 500px) {
-	.text-wrapper {
-		.title {
-			font-size: 5vw !important;
-		}
-		.subtitle {
-			font-size: 4vw !important;
+	.map {
+		.text-wrapper {
+			.title {
+				font-size: 5vw !important;
+			}
+			.subtitle {
+				font-size: 4vw !important;
+			}
 		}
 	}
 }
 @media  (max-width: 400px) {
-	.text-wrapper {
-		.title {
-			font-size: 6vw !important;
-		}
-		.subtitle {
-			font-size: 5vw !important;
+	.map {
+		.text-wrapper {
+			.title {
+				font-size: 6vw !important;
+			}
+			.subtitle {
+				font-size: 5vw !important;
+			}
 		}
 	}
 }

@@ -1,3 +1,7 @@
+//Responsive.js 
+//Lukas Metlicka Aug. 2015
+
+
 $(document).ready(function(){
 	func();
 });
@@ -5,32 +9,35 @@ $(document).ready(function(){
 $(window).resize(function(){
 	func();
 });
-var hasOccured = false;
+
+//All of the jQuery logic
 function func() {
 	var step_width = $(".step:first").width();
 	var step_height = $(".step:first").height();
-	var path_width = step_width * 0.2;
 
+	var path_width = step_width * 0.2;
+	//Resizes SVG elements to screen size.
+	//SVG requires exact values
 	$(".path").css({
 		width: path_width,
 		height: path_width * 1.489
 	});
+
+	//Resizes .path-first like .path
 	$(".path-first").css({
 		width: path_width,
 		height: path_width
 	});
-	$(".image-first").css({
-		width: Math.floor(path_width * 0.9298),
-		top: Math.floor(step_height * 0.0515)
-	});
-	$(".image").css({
-		width: Math.floor(path_width * 0.9298),
-		top: Math.floor(step_height * 0.5)
-	});
-	$("circle").hover(function(){
 
-	})
-	
+	//Hover Events for Images
+	$("circle").mouseenter(function(){
+		$(this).parent().fadeTo('400', 0.5);
+	});
+	$("circle").mouseleave(function(){
+		$(this).parent().fadeTo('400', 1);
+	});
+
+	//Convert to Mobile Mode
 	if (step_width < 600){
 		$("rect").remove();
 		$(".path").css({
